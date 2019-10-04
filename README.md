@@ -18,7 +18,7 @@ yarn add use-window-scroll-hook
 
 ## Usage
 
-### fire when user stops scrolling
+### updates only when user stops scrolling
 
 ```jsx
 import React, { Component } from 'react'
@@ -44,7 +44,7 @@ const App = () => {
 }
 ```
 
-### fire continuously, at every scroll event
+### updates continuously, at every scroll event
 
 ```jsx
 import React, { Component } from 'react'

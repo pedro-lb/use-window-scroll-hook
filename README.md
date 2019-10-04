@@ -1,6 +1,6 @@
 # use-window-scroll-hook
 
-> React Hook to monitor window scroll event.
+React Hook to monitor window scroll event.
 
 [![NPM](https://img.shields.io/npm/v/use-window-scroll-hook.svg)](https://www.npmjs.com/package/use-window-scroll-hook) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -10,17 +10,34 @@
 npm install --save use-window-scroll-hook
 ```
 
+or
+
+```bash
+yarn add use-window-scroll-hook
+```
+
 ## Usage
 
 ```jsx
 import React, { Component } from 'react'
 
-import { useMyHook } from 'use-window-scroll-hook'
+import { useWindowScroll } from 'use-window-scroll-hook'
 
-const Example = () => {
-  const example = useMyHook()
+const App = () => {
+  const {
+    scrollX,
+    scrollY,
+  } = useWindowScroll();
+
   return (
-    <div>{example}</div>
+    <>
+      <p>
+        {`Scroll X: ${scrollX}`}
+      </p>
+      <p>
+        {`Scroll Y: ${scrollY}`}
+      </p>
+    </>
   )
 }
 ```

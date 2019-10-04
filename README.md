@@ -18,6 +18,8 @@ yarn add use-window-scroll-hook
 
 ## Usage
 
+### fire when user stops scrolling
+
 ```jsx
 import React, { Component } from 'react'
 
@@ -28,6 +30,32 @@ const App = () => {
     scrollX,
     scrollY,
   } = useWindowScroll();
+
+  return (
+    <>
+      <p>
+        {`Scroll X: ${scrollX}`}
+      </p>
+      <p>
+        {`Scroll Y: ${scrollY}`}
+      </p>
+    </>
+  )
+}
+```
+
+### fire continuously, at every scroll event
+
+```jsx
+import React, { Component } from 'react'
+
+import { useWindowScroll } from 'use-window-scroll-hook'
+
+const App = () => {
+  const {
+    scrollX,
+    scrollY,
+  } = useWindowScroll(false);
 
   return (
     <>

@@ -23,7 +23,7 @@ yarn add use-window-scroll-hook
 ```jsx
 import React, { Component } from 'react'
 
-import { useWindowScroll } from 'use-window-scroll-hook'
+import useWindowScroll from 'use-window-scroll-hook'
 
 const App = () => {
   const {
@@ -49,7 +49,7 @@ const App = () => {
 ```jsx
 import React, { Component } from 'react'
 
-import { useWindowScroll } from 'use-window-scroll-hook'
+import useWindowScroll from 'use-window-scroll-hook'
 
 const App = () => {
   const {

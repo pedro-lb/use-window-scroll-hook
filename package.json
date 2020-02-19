@@ -1,6 +1,6 @@
 {
   "name": "use-window-scroll-hook",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Hook to monitor window scroll event.",
   "author": "pedro-lb",
   "license": "MIT",
@@ -64,5 +64,12 @@
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-url": "^2.1.0"
-  }
+  },
+  "keywords": [
+    "hooks",
+    "react",
+    "react-hook",
+    "window-scroll",
+    "scroll"
+  ]
 }
